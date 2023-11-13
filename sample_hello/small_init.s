@@ -229,6 +229,7 @@ _start_ip:
 
 /* ------------------------------------------------- */
 /* Initialization for UART functionality of MFP68901 */
+/* This code is not part of the original.            */
 /* ------------------------------------------------- */
     ldconst   0x88, g3		/* x16, 8bit, N, 1  */
     lda       0x80000028, g2	/* UCR              */
