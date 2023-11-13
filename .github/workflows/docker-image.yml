@@ -21,4 +21,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file docker_cross/Dockerfile --tag i960SDK:$(date +%s)
+      run: docker build . --file docker_cross/Dockerfile --tag i960sdk:$(date +%s)
