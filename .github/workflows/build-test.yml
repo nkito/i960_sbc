@@ -8,6 +8,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up Docker
-          run: docker pull ghcr.io/nkito/i960_sbc:latest
+        run: docker pull ghcr.io/nkito/i960_sbc:latest
       - name: Build test
-          run: docker run --rm -v $GITHUB_WORKSPACE:/src -w /src/sample_hello i960sdk ./build.sh          
+        run: docker run --rm -v $GITHUB_WORKSPACE:/src -w /src/sample_hello i960sdk ./build.sh
