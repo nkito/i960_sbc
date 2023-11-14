@@ -25,6 +25,10 @@ int isUSARTDataAvailable(void){
 }
 
 
+/*
+Part of following code is based on 
+https://natsu-no-omoide.hatenablog.jp/entry/2020/07/25/150800
+*/
 
 double __trunctfdf2( long double A );
 caddr_t _sbrk(int incr);
@@ -38,7 +42,6 @@ int _getpid(void);
 int _isatty(int file);
 void _kill(int pid, int sig);
 
-register char * stack_ptr asm ("sp");
 caddr_t sbrk(int incr) 
 {
     static char sbrk_buf[10000];
