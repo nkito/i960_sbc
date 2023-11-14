@@ -1,4 +1,5 @@
 [![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/nkito/i960_SBC/docker-image.yml?label=docker-image&logo=github&style=flat-square)](https://github.com/nkito/i960_SBC/actions?workflow=docker-image)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/nkito/i960_SBC/build-test.yml?label=sample-binary&logo=github&style=flat-square)](https://github.com/nkito/i960_SBC/actions?workflow=build-test)
 
 # i960 Single Board Computer
 
