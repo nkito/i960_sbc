@@ -6,13 +6,11 @@ on:
     paths:
       - '.github/workflows/docker-image.yml'
       - 'docker_cross/**'
-      - 'sample_hello/**'
   pull_request:
     branches: [ "main" ]
     paths:
       - '.github/workflows/docker-image.yml'
       - 'docker_cross/**'
-      - 'sample_hello/**'
 
 jobs:
 
@@ -22,5 +20,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
-      run: docker build . --file docker_cross/Dockerfile --tag i960sdk:$(date +%s)
+      run: docker build . --file docker_cross/Dockerfile --tag ghcr.io/$GITHUB_ACTOR/i960_sbc:latest
+    - name: Push Docker Image
+      run: docker push ghcr.io/$GITHUB_ACTOR/i960_sbc:latest
