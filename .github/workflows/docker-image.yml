@@ -27,6 +27,6 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build the Docker image
-      run: docker build . --file docker_cross/Dockerfile --tag ghcr.io/$GITHUB_ACTOR/i960_sbc:latest
+      run: docker build . --file docker_cross/Dockerfile --tag ghcr.io/$GITHUB_ACTOR/i960_SBC:latest
     - name: Push Docker Image
-      run: docker push ghcr.io/$GITHUB_ACTOR/i960_sbc:latest
+      run: docker push ghcr.io/$GITHUB_ACTOR/i960_SBC:latest
