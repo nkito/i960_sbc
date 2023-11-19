@@ -31,6 +31,11 @@ Controller sources are [here](controller/).
 It can be compiled with Quartus II 64-Bit Version 13.0.1 Build 232 Service Pack 1 Web Edition.
 Please use it at your own risk.
 
+If Atmel ATF1502AS is planned to use, please check [Atmel application note 916](http://ww1.microchip.com/downloads/en/AppNotes/DOC0916.PDF).
+Atmel tool POF2JED converts a POF file generated for a corresponding Altera chip into an atmel JED file.
+The JED file can be converted into an SVF file with another Atmel tool named ATMISP.
+JTAG softwares such as openocd can program the chip with the SVF file. But, it is tough...
+
 ## Software
 
 ### Cross compiler
