@@ -3,15 +3,25 @@
 
 # i960 Single Board Computer
 
-Under construction. It is a hobby project.
+It is a hobby project. Please use it at your own risk.
 
 ## Hardware
 
 ### Parts
 
-* Processor: Intel i960 (N80960SA16 or N80960SB16)
-* Peripheral: Motorola MC68901P (UART, Timer, and GPIO)
-* Controller: Altera EPM7032SLC44-10 (or Atmel ATF1502AS-7JX44)
+| Functions | Chips |
+|----|----|
+| Processor                          | Intel i960 <br>(N80960SA16 or N80960SB16) |
+| Peripheral (UART, Timer, and GPIO) | Motorola MC68901P |
+| Controller                         | Altera EPM7032SLC44-10 <br>(or Atmel ATF1502AS-7JX44) |
+
+### Schematic
+
+Schematis is [here](schematic/i960_Dev.pdf).
+Though boards built as the schematic is are working correctly, there are issues related to voltage levels.
+* 74HCT573 is better for U1 and U4.
+* Generation of RW̅ from WR̅ with a schmitt-trigger inverter 74HC14 might not work.
+* The voltage level for clk2 pin is not the same for the other pins. Care for clk2 is necessary.
 
 ## Software
 
