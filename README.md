@@ -14,12 +14,14 @@ It is a hobby project. Please use it at your own risk.
 | Processor                          | Intel i960 <br>(N80960SA16 or N80960SB16) |
 | Peripheral (UART, Timer, and GPIO) | Motorola MC68901P |
 | Controller                         | Altera EPM7032SLC44-10 <br>(or Atmel ATF1502AS-7JX44) |
+| RAM                                | Infineon CY7C1021BN-12ZXC (64K x 16)  |
+| ROM                                | 27C512 (64K x 8) with access time below 120ns |
 
 ### Schematic
 
 Schematis is [here](schematic/i960_Dev.pdf).
 Though boards built as the schematic is are working correctly, there are issues related to voltage levels.
-* 74HCT573 is better for U1 and U4.
+* 74HCT573 is better for U1, U4 and U11.
 * Generation of RW̅ from WR̅ with a schmitt-trigger inverter 74HC14 might not work.
 * The voltage level for clk2 pin is not the same for the other pins. Care for clk2 is necessary.
 
