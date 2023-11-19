@@ -27,8 +27,9 @@ Though boards built as the schematic is are working correctly, there are issues 
 
 ### Controller 
 
-Controller source is [here](controller/).
-
+Controller sources are [here](controller/).
+It can be compiled with Quartus II 64-Bit Version 13.0.1 Build 232 Service Pack 1 Web Edition.
+Please use it at your own risk.
 
 ## Software
 
