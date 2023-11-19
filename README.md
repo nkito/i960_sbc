@@ -19,7 +19,7 @@ It is a hobby project. Please use it at your own risk.
 
 ### Schematic
 
-Schematis is [here](schematic/i960_Dev.pdf).
+Schematic is [here](schematic/i960_Dev.pdf).
 Though boards built as the schematic is are working correctly, there are issues related to voltage levels.
 * 74HCT573 is better for U1, U4 and U11.
 * Generation of RW̅ from WR̅ with a schmitt-trigger inverter 74HC14 might not work.
