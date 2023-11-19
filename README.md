@@ -13,9 +13,9 @@ It is a hobby project. Please use it at your own risk.
 |----|----|
 | Processor                          | Intel i960 working at 16MHz<br>(N80960SA16 w/o FPU or N80960SB16 with FPU) |
 | Peripheral (UART, Timer, and GPIO) | Motorola MC68901P |
-| Controller                         | Altera EPM7032SLC44-10 <br>(or Atmel ATF1502AS-7JX44) |
-| RAM                                | Infineon CY7C1021BN-12ZXC (64K x 16)  |
-| ROM                                | 27C512 (64K x 8) with access time below 120ns |
+| Controller                         | Altera EPM7032SLC44-10 <br>(or compatible Atmel ATF1502AS-7JX44) |
+| 128 KiB RAM                        | Infineon CY7C1021BN-12ZXC (64K x 16)  |
+| 64 KiB ROM                         | 27C512 (64K x 8) with access time below 120ns |
 
 ### Schematic
 
@@ -35,7 +35,7 @@ Controller sources are [here](controller/).
 It can be compiled with Quartus II 64-Bit Version 13.0.1 Build 232 Service Pack 1 Web Edition.
 Please use it at your own risk.
 
-If Atmel ATF1502AS is planned to use, please check [Atmel application note 916](http://ww1.microchip.com/downloads/en/AppNotes/DOC0916.PDF).
+If Atmel ATF1502AS is planned to use instead of EPM7032S, please check [Atmel application note 916](http://ww1.microchip.com/downloads/en/AppNotes/DOC0916.PDF).
 Atmel tool POF2JED converts a POF file generated for a corresponding Altera chip into an atmel JED file.
 The JED file can be converted into an SVF file with another Atmel tool named ATMISP.
 JTAG softwares such as openocd can program the chip with the SVF file. But, it is tough...
