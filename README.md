@@ -6,6 +6,8 @@
 It is a simple simple board computer with a i960 processor. It uses i960SA or i960SB processor which is available as secondhand or an old stock even in today.
 Please use it at your own risk.
 
+<img src="img/board_i960sb.jpg" width="500px">
+
 ## Hardware
 
 ### Parts
